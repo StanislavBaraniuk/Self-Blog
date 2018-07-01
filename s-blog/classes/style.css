@@ -1,0 +1,116 @@
+.dz11-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #eaeaea;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+.dz11-header {
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    height: 80px;
+    background-color: whitesmoke;
+    margin: 0;
+
+}
+.dz11-header-wrapper {
+    display: grid;
+
+}
+.dz11-header-wrapper div h2 {
+    /*line-height: 20px;*/
+}
+.dz11-header-account {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    transition: 0.3s;
+}
+.dz11-header-account:hover {
+    transition: 0.3s;
+    color:rgba(101,101,101,0.55);
+}
+
+.dz11-content-main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 25px;
+}
+li {
+    list-style: none;
+}
+.dz11-content {
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+.dz11-content-item {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    padding: 10px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.dz11-content-item:hover {
+    background-color: whitesmoke;
+    border-radius: 25px;
+}
+.dz11-content-item-autor {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+    height: 40px;
+//                    background-color: #5997CA;
+    color: white;
+    border-radius: 100px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.dz11-content-item-title {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    height: 70px;
+    line-height: 70px;
+    color: #161616;
+    text-decoration: none;
+}
+.dz11-content-item-autor-name {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+.dz11-content-item-right {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+}
+.dz11-content-item-date {
+    line-height: 70px;
+}
+.hideZZZ {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: whitesmoke;
+}
+
+@media (max-width:800px) {
+    body{
+        !important color: #f2da38;
+    }
+    .dz11-content {
+        background-color: #f2da38;
+        grid-template-columns: 0.1fr 1fr 0.2fr;
+    }
+}
